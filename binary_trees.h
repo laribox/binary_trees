@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include <stddef.h>
 
 
 /**
@@ -33,6 +34,8 @@ typedef struct binary_tree_s avl_t;
 
 /* Max Binary Heap */
 typedef struct binary_tree_s heap_t;
+
+void binary_tree_print(const binary_tree_t *);
 
 /* prototypes */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
